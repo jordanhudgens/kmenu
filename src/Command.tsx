@@ -49,8 +49,6 @@ const Command: FC<{
           if (!command.closeOnComplete) setOpen(0)
           run(command)
         }}
-        href={command.href || '#'}
-        target={command.newTab ? '_blank' : '_self'}
         rel='noreferrer'
       >
         {isSelected && (
